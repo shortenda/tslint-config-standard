@@ -221,7 +221,7 @@ module.exports = {
       {
         'allowSingleLine': true
       }
-    ]
+    ],
     // 'comma-spacing': [
     //   true,
     //   {
@@ -298,10 +298,16 @@ module.exports = {
     //   true,
     //   'always'
     // ],
-    // 'space-before-function-paren': [
-    //   true,
-    //   'always'
-    // ],
+    'space-before-function-paren': [
+      true,
+      {
+        'anyonomous': 'always',
+        'named': 'always',
+        'method': 'always',
+        'constructor': 'always'
+        // asyncArrow is ignored as per eslint space-before-function-paren
+      }
+    ]
     // 'space-in-parens': [
     //   true,
     //   'never'
